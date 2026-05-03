@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu — Ibiza 254</title>
+  <meta name="description" content="Explore the full menu at Ibiza 254 — burgers, steaks, cocktails, pizza and more at Lavington Mall, Nairobi.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="menu-body">
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <a href="index.html" class="logo">
+      <span class="logo-main">IBIZA</span>
+      <span class="logo-sub">254</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="menu.html" class="nav-link active">Menu</a>
+      <a href="index.html#contact" class="nav-link nav-cta">Reserve</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" class="mob-link">Home</a>
+    <a href="menu.html" class="mob-link">Menu</a>
+    <a href="index.html#contact" class="mob-link">Reserve</a>
+  </div>
+
+  <!-- MENU HERO -->
+  <section class="menu-hero">
+    <div class="menu-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600&q=80')"></div>
+    <div class="menu-hero-overlay"></div>
+    <div class="menu-hero-content">
+      <p class="section-label light-label">Ibiza 254</p>
+      <h1>The Menu</h1>
+      <p class="menu-hero-sub">Crafted for pleasure. Served with intent.</p>
+    </div>
+  </section>
+
+  <!-- MENU BODY -->
+  <section class="menu-section">
+
+    <!-- FILTER TABS -->
+    <div class="menu-tabs">
+      <button class="tab active" data-filter="all">All</button>
+      <button class="tab" data-filter="mains">Mains</button>
+      <button class="tab" data-filter="burgers">Burgers</button>
+      <button class="tab" data-filter="pizza">Pizza</button>
+      <button class="tab" data-filter="extras">Extras</button>
+    </div>
+
+    <!-- MAINS -->
+    <div class="menu-category" data-cat="mains">
+      <div class="cat-header">
+        <span class="cat-num">01</span>
+        <h2>Mains</h2>
+        <div class="cat-line"></div>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item" data-cat="mains">
+          <div class="item-info">
+            <h3>Cali Chilli Wings</h3>
+            <p>Crispy wings tossed in our signature California-style chilli glaze</p>
+          </div>
+          <span class="item-price">KES 1,450</span>
+        </div>
+        <div class="menu-item" data-cat="mains">
+          <div class="item-info">
+            <h3>Oliver's Pork Ribs</h3>
+            <p>Slow-braised fall-off-the-bone ribs with house BBQ rub</p>
+          </div>
+          <span class="item-price">KES 1,550</span>
+        </div>
+        <div class="menu-item" data-cat="mains">
+          <div class="item-info">
+            <h3>Cheesy Samosas</h3>
+            <p>Golden-fried parcels filled with molten cheese blend</p>
+          </div>
+          <span class="item-price">KES 950</span>
+        </div>
+        <div class="menu-item" data-cat="mains">
+          <div class="item-info">
+            <h3>Mbuzi Ribs</h3>
+            <p>Kenyan-spiced goat ribs, slow-cooked to perfection</p>
+          </div>
+          <span class="item-price">KES 1,550</span>
+        </div>
+        <div class="menu-item featured" data-cat="mains">
+          <div class="item-info">
+            <h3>Rib-Eye Steak <span class="badge-chef">Chef's Pick</span></h3>
+            <p>Prime cut rib-eye, char-grilled to your preference with garlic butter</p>
+          </div>
+          <span class="item-price">KES 3,250</span>
+        </div>
+        <div class="menu-item" data-cat="mains">
+          <div class="item-info">
+            <h3>Chicken Legs</h3>
+            <p>Marinated overnight, grilled crisp with house chimichurri</p>
+          </div>
+          <span class="item-price">KES 2,450</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- BURGERS -->
+    <div class="menu-category" data-cat="burgers">
+      <div class="cat-header">
+        <span class="cat-num">02</span>
+        <h2>Burgers</h2>
+        <div class="cat-line"></div>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item featured" data-cat="burgers">
+          <div class="item-info">
+            <h3>New Orleans Burger <span class="badge-chef">Fan Favourite</span></h3>
+            <p>Double patty with Cajun spices, pepper jack, crispy onions, and remoulade</p>
+          </div>
+          <span class="item-price">KES 1,750</span>
+        </div>
+        <div class="menu-item" data-cat="burgers">
+          <div class="item-info">
+            <h3>Smash Burger</h3>
+            <p>Two smashed patties, American cheese, pickles, special sauce, brioche bun</p>
+          </div>
+          <span class="item-price">KES 1,650</span>
+        </div>
+        <div class="menu-item" data-cat="burgers">
+          <div class="item-info">
+            <h3>Chicken Peanut Burger</h3>
+            <p>Crispy chicken thigh, house peanut sauce, slaw, and toasted sesame bun</p>
+          </div>
+          <span class="item-price">KES 1,750</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PIZZA -->
+    <div class="menu-category" data-cat="pizza">
+      <div class="cat-header">
+        <span class="cat-num">03</span>
+        <h2>Pizza</h2>
+        <div class="cat-line"></div>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item" data-cat="pizza">
+          <div class="item-info">
+            <h3>Pepperoni Pizza</h3>
+            <p>San Marzano tomato base, mozzarella, premium pepperoni, chilli flakes</p>
+          </div>
+          <span class="item-price">KES 1,750</span>
+        </div>
+        <div class="menu-item featured" data-cat="pizza">
+          <div class="item-info">
+            <h3>Ibiza Signature Pizza <span class="badge-chef">Our Best</span></h3>
+            <p>Our exclusive blend of toppings — curated by the chef, changes seasonally</p>
+          </div>
+          <span class="item-price">KES 1,750</span>
+        </div>
+        <div class="menu-item" data-cat="pizza">
+          <div class="item-info">
+            <h3>Margherita Pizza</h3>
+            <p>Simplicity perfected — fresh tomato, buffalo mozzarella, basil</p>
+          </div>
+          <span class="item-price">KES 1,750</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXTRAS -->
+    <div class="menu-category" data-cat="extras">
+      <div class="cat-header">
+        <span class="cat-num">04</span>
+        <h2>Extras</h2>
+        <div class="cat-line"></div>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item" data-cat="extras">
+          <div class="item-info">
+            <h3>Fries</h3>
+            <p>Crispy golden fries with seasoning salt</p>
+          </div>
+          <span class="item-price">KES 450</span>
+        </div>
+        <div class="menu-item" data-cat="extras">
+          <div class="item-info">
+            <h3>Wedges</h3>
+            <p>Thick-cut potato wedges with sour cream dip</p>
+          </div>
+          <span class="item-price">KES 450</span>
+        </div>
+        <div class="menu-item" data-cat="extras">
+          <div class="item-info">
+            <h3>Salsa</h3>
+            <p>Fresh house-made tomato salsa with tortilla chips</p>
+          </div>
+          <span class="item-price">KES 300</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- CTA -->
+  <section class="menu-cta">
+    <h2>Ready for the full experience?</h2>
+    <p>Reserve your table and let us take care of the rest.</p>
+    <a href="index.html#contact" class="btn-primary">Reserve Tonight</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="logo-main">IBIZA</span><span class="logo-sub">254</span>
+        <p>Turning nights into unforgettable memories since 2020.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="index.html#contact">Reserve</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/ibiza_254/" target="_blank" rel="noopener" class="social-link">Instagram</a>
+        <a href="tel:+254728466007" class="social-link">Call Us</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Ibiza 254. All rights reserved. · Lavington Mall, Nairobi</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
